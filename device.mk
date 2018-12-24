@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8937 \
     audio.r_submix.default \
     audio.usb.default \
+    libaacwrapper \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
@@ -440,3 +441,8 @@ PRODUCT_COPY_FILES += \
 
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/ugglite/ugglite-vendor.mk)
+
+# Wi-Fi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
