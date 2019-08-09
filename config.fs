@@ -10,6 +10,9 @@ value:2904
 [AID_VENDOR_ADPL_ODL]
 value:2905
 
+[AID_VENDOR_THERMAL]
+value:2907
+
 [vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti]
 mode: 0755
 user: AID_BLUETOOTH
@@ -81,9 +84,12 @@ mode: 0771
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
+<<<<<<< HEAD
 
 [dsp/]
 mode: 0771
 user: AID_MEDIA
 group: AID_MEDIA
 caps: 0
+=======
+>>>>>>> dcbe7f94... config.fs: init: Add AID_VENDOR_THERMAL for thermal-engine
