@@ -134,6 +134,11 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 
+# A2DP
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.a2dp@1.0-impl \
+    android.hardware.bluetooth.a2dp@1.0-service
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
