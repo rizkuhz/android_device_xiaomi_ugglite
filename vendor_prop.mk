@@ -108,7 +108,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sdm.support_writeback=0 \
     debug.sf.disable_backpressure=1 \
     debug.sf.hw=1 \
-    debug.sf.latch_unsignaled=1 \
+    debug.sf.latch_unsignaled=0 \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
@@ -193,7 +193,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
+    sys.use_fifo_ui=0
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
