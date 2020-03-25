@@ -132,7 +132,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := ugglite_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8917
 TARGET_KERNEL_VERSION := 3.18
 TARGET_COMPILE_WITH_MSM_KERNEL	:= true
 
@@ -186,7 +186,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 VENDOR_SECURITY_PATCH := 2019-06-01
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
