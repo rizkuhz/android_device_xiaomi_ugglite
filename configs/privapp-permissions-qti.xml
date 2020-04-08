@@ -48,7 +48,11 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
     </privapp-permissions>
-
+    <privapp-permissions package="com.qualcomm.qti.cne">
+        <permission name="android.permission.NETWORK_BYPASS_PRIVATE_DNS"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
     <privapp-permissions package="org.codeaurora.ims">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
