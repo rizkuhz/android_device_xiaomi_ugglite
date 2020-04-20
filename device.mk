@@ -432,6 +432,5 @@ PRODUCT_COPY_FILES += \
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit common proprietary files
+# Inherit device proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/ugglite/ugglite-vendor.mk)
-$(call inherit-product-if-exists, vendor/xiaomi/msm8937-common/msm8937-common-vendor.mk)
