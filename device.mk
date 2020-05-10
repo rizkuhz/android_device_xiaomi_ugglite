@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+# libqti_vndfwk_detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
