@@ -20,17 +20,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Syberia stuff
+$(call inherit-product, vendor/syberia/config/common.mk)
 
-# Inherit from riva device
+# Inherit from ugglite device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+TARGET_BOOT_ANIMATION_RES := 720
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := ugglite
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 5A Lite
-PRODUCT_NAME := lineage_ugglite
+PRODUCT_NAME := syberia_ugglite
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
