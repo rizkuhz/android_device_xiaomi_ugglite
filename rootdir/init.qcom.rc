@@ -358,6 +358,21 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
+service wfdservice /system/bin/wfdservice
+    class main
+    user system
+    group audio camera inet drmrpc media_rw media input net_admin
+    #removed these because of limit of 12 groups
+    #graphics net_bt net_bt_admin bluetooth
+    disabled
+    oneshot
+
+on property:sys.wfdservice=enable
+    start wfdservice
+
+on property:sys.wfdservice=disable
+    stop wfdservice
+
 on property:init.svc.media=restarting
     restart qcamerasvr
 
